@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Создать пароль</h1>
+        <div class="options">
+            <label class="length">
+                Длина пароля:
+                <input type="text" id="length">
+            </label>
+            <label class="nums">
+                <input type="checkbox" id="nums">
+                Использовать цифры
+            </label>
+            <label class="symb">
+                <input type="checkbox" id="symb">
+                Использовать символы
+            </label>
+        </div>
+        <button id="generate" onclick="generate()">Создать пароль</button>
+        <p class="password"></p>
+    </div>
+    <script src="passgen.js"></script>
+</body>
+</html>
